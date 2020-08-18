@@ -1,8 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 
+# This is my user agent.
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36'}
 
+# This is URL of the amazon of what i want to scrape
 url = 'https://www.amazon.com/Folgers-Instant-Coffee-Crystals-Classic/dp/B01LB1J9BW/ref=sr_1_1?dchild=1&keywords=instant+coffe&qid=1597498527&sr=8-1'
 
 content = requests.get(url, headers=headers)
